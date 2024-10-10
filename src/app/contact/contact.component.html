@@ -33,19 +33,20 @@
 
     <div class="details" style="padding: 5px; align-items: center; justify-content: center; display: flex; flex-direction: column; text-align: left;">
 
-   <label for=""> Username: <br> <input type="text" id="name" required [(ngModel)]="contact.name" name="username"><br>
+   <label for=""> Username: <br> <input type="text" id="name" required [(ngModel)]="contact.name" name="username" placeholder="Username"><br>
 
-    Email: <br> <input type="email" id="email" required [(ngModel)]="contact.email" name="email"><br>
+    Email: <br> <input type="email" id="email" required [(ngModel)]="contact.email" name="email" placeholder="@email"><br>
 
-    Password: <br> <input type="password" name="password"><br><br></label>
+    Password: <br> <input type="password" name="password" placeholder="password"><br><br></label>
 
     <div class="form-group">
 
         <label for="message">Message</label>
-        <textarea id="message" required [(ngModel)]="contact.message" name="message"></textarea>
+        <textarea id="message" required [(ngModel)]="contact.message" name="message" placeholder="Write your message..."></textarea>
     </div>
 
-    <button type="submit" [disabled]="!contactForm.form.valid">Send Message</button>    <div *ngIf="submitted" class="success-message">
+    <button type="submit" [disabled]="!contactForm.form.valid">Send Message</button>    
+    <div *ngIf="submitted" class="success-message">
         <p>Thank you for your message! I'll get back to you soon.</p>
     </div>
 </div>

@@ -38,6 +38,7 @@ button {
 
 button:disabled {
     background-color: #cccccc;
+    color: rgb(94, 94, 94);
 }
 
 .success-message {
@@ -56,17 +57,25 @@ button:disabled {
     }
 
     input{
-    width: 100%;
+    width: 150%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
     }
 
     input, textarea {
-        width: 100%;
+        display: flex;
+        width: 130%;
         padding: 10px;
         border: 1px solid #ccc;
         border-radius: 4px;
+    }
+
+    label{
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        margin-left: -30%;
     }
 
     button {

@@ -13,9 +13,10 @@ h1 {
     display: block;
     margin: 0 auto 20px;
     border-radius: 50%; /* Make it circular */
-    width: 150px; /* Default width */
-    height: 150px; /* Default height */
+    width: 200px; /* Default width */
+    height: 200px; /* Default height */
 }
+
 
 h2 {
     margin-top: 30px;
@@ -49,8 +50,8 @@ h2 {
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
     .profile-image {
-        width: 120px; /* Smaller width for mobile */
-        height: 120px; /* Smaller height for mobile */
+        width: 150px; /* Smaller width for mobile */
+        height: 150px; /* Smaller height for mobile */
     }
 
     h1 {
@@ -72,8 +73,8 @@ h2 {
 
 @media (max-width: 480px) {
     .profile-image {
-        width: 100px; /* Even smaller width for very small screens */
-        height: 100px; /* Even smaller height for very small screens */
+        width: 180px; /* Even smaller width for very small screens */
+        height: 180px; /* Even smaller height for very small screens */
     }
 
     h1 {
