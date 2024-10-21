@@ -22,6 +22,7 @@ h1 {
 
 .service-item h2 {
     margin-top: 0;
+    text-align: center;
 }
 
 .service-item img{
@@ -55,6 +56,7 @@ h1 {
 
     .service-item h2 {
         font-size: 1.2em; /* Smaller font size for service titles */
+        text-align: center;
     }
 
     .service-item p {
@@ -74,6 +76,7 @@ h1 {
 
     .service-item h2 {
         font-size: 1em; /* Further reduced font size for titles */
+        text-align: center;
     }
 
     .service-item p {
@@ -92,7 +95,7 @@ h1 {
         background-image: linear-gradient(to right, orange, rgb(255, 0, 43));
         border-radius: 5px;
     }
-    
+
     .service-item button:hover{
         transform: translateY(2px);
     }
