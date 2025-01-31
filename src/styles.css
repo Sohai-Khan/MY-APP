@@ -3,5 +3,7 @@ body{
     background: #19012a;
     color: white;
     justify-content: center;
+    animation: forwards;
 }
+
 

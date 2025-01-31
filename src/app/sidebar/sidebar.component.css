@@ -1,5 +1,5 @@
 .layout {
-    display: flex;
+    display: none;
     position: fixed;
     margin: 20px;
 }

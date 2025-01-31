@@ -1,6 +1,6 @@
 <!-- <div class="contact">
     <h1>Contact Me</h1>
-    
+
     <form (ngSubmit)="onSubmit()" #contactForm="ngForm">
         <div class="form-group">
             <label for="name">Name</label>
@@ -33,11 +33,11 @@
 
     <div class="details" style="padding: 5px; align-items: center; justify-content: center; display: flex; flex-direction: column; text-align: left;">
 
-   <label for=""> Username: <br> <input type="text" id="name" required [(ngModel)]="contact.name" name="username" placeholder="Username"><br>
+   <label for=""> Username: <br> <input type="text" id="name" required [(ngModel)]="contact.name" name="username" placeholder="Username" required><br>
 
-    Email: <br> <input type="email" id="email" required [(ngModel)]="contact.email" name="email" placeholder="@email"><br>
+    Email: <br> <input type="email" id="email" required [(ngModel)]="contact.email" name="email" placeholder="@email" required><br>
 
-    Password: <br> <input type="password" name="password" placeholder="password"><br><br></label>
+    Password: <br> <input type="password" name="password" placeholder="password" required><br><br></label>
 
     <div class="form-group">
 
@@ -45,7 +45,7 @@
         <textarea id="message" required [(ngModel)]="contact.message" name="message" placeholder="Write your message..."></textarea>
     </div>
 
-    <button type="submit" [disabled]="!contactForm.form.valid">Send Message</button>    
+    <button type="submit" [disabled]="!contactForm.form.valid">Send Message</button>
     <div *ngIf="submitted" class="success-message">
         <p>Thank you for your message! I'll get back to you soon.</p>
     </div>

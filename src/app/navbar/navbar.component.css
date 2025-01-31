@@ -2,8 +2,8 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    animation: fade-down;
 }
-
 .navbar {
     display: flex;
     position: relative;
