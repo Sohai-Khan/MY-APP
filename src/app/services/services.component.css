@@ -1,10 +1,11 @@
 .services {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     padding: 20px;
-    max-width: 700px;
+    max-width: 400px;
     margin: auto;
 }
 
@@ -27,8 +28,8 @@ h1 {
 
 .service-item img{
     display: flex;
-    width: 666px;
-    height: 390px;
+    width: 444px;
+    height: 290px;
     justify-content: center;
 }
 
