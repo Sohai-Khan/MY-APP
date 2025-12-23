@@ -1,0 +1,111 @@
+.home {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.home-main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    gap: 50px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.image-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-image {
+    border-top-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+    width: 400px; /* Default width */
+    height: 400px; /* Default height */
+}
+
+
+h2 {
+    margin-top: 30px;
+    
+}
+
+.skills {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills li {
+    background-color: #f2f2f2;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    color: black;
+}
+
+.experience {
+    margin-top: 20px;
+}
+
+.job {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .home-main {
+        flex-direction: column;
+        gap: 30px;
+        flex-flow: column-reverse;
+    }
+
+    .profile-image {
+        width: 150px; /* Smaller width for mobile */
+        height: 150px; /* Smaller height for mobile */
+    }
+
+    h1 {
+        font-size: 1.5em; /* Smaller font size for mobile */
+    }
+
+    h2 {
+        font-size: 1.2em; /* Smaller font size for mobile */
+    }
+
+    .skills li {
+        font-size: 0.9em; /* Smaller font size for skills */
+    }
+
+    .job {
+        padding: 10px; /* Less padding for job descriptions */
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-image {
+        width: 180px; /* Even smaller width for very small screens */
+        height: 180px; /* Even smaller height for very small screens */
+    }
+
+    h1 {
+        font-size: 1.2em; /* Further reduced font size */
+    }
+
+    h2 {
+        font-size: 1em; /* Further reduced font size */
+    }
+
+    .skills li {
+        font-size: 0.8em; /* Further reduced font size for skills */
+    }
+}

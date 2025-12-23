@@ -1,0 +1,37 @@
+.ads-sidebar {
+    display: none;
+    position: fixed;
+    right: 20px;
+    top: 100px; /* Adjust based on your navbar height */
+    width: 200px; /* Set width for your sidebar */
+    background-color: #4d494950;
+    padding: 10px;
+    border-left: 1px solid #ccc;
+    z-index: 1000; /* Ensure it appears above other content */
+}
+
+.ads-sidebar img{
+    width: 170px;
+}
+
+.ad {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+@media (max-width: 768px) {
+    .layout {
+        display: none;
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 912px){
+    .layout{
+        display: none;
+    }
+}

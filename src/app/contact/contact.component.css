@@ -1,0 +1,140 @@
+.contact {
+    padding: 60px;
+    max-width: 600px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 500px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    display: block;
+    width: 525px;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: #cccccc;
+    color: rgb(94, 94, 94);
+}
+
+.success-message {
+    margin-top: 20px;
+    color: green;
+}
+
+.details input{
+    margin: 10px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 480px) {
+
+    fieldset{
+        padding: 0%;
+        border: none;
+        margin: 0%;
+        margin-top: -30px;
+    }
+
+    .contact {
+       padding: 1px 1px;
+       max-width: 600px;
+       margin: auto;
+       margin-top: 50px;
+
+    legend{
+        font-size: 24px;
+        display: none;
+    }
+
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        margin-top: -20px;
+        margin-bottom: 20px;
+
+        label{
+            margin-left: 03px;
+        }
+
+        textarea{
+            width: 270px;
+            position: relative;
+            margin-left: 10px;
+        }
+    }
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    background: #ffffff11;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+    h1 {
+        font-size: 1.5em; /* Adjust font size for smaller screens */
+    }
+
+    input{
+    width: 150%;
+    padding: 10px;
+    border: 1px solid #cccccc80;
+    border-radius: 4px;
+    }
+
+    input, textarea {
+        display: flex;
+        width: 130%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    label{
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        margin-left: -30%;
+    }
+
+    button {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+}

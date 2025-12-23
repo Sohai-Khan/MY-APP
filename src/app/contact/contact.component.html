@@ -1,0 +1,26 @@
+
+<div class="contact">
+<fieldset style="padding: 15px;">
+    <form (ngSubmit)="onSubmit()" #contactForm="ngForm">
+
+    <legend>Detalis</legend>
+
+    <div class="details" style="padding: 5px; align-items: center; justify-content: center; display: flex; flex-direction: column; text-align: left;">
+
+   <label for=""> Username: <br> <input type="text" id="name" required [(ngModel)]="contact.name" name="username" placeholder="Username" required><br>
+
+    Email: <br> <input type="email" id="email" required [(ngModel)]="contact.email" name="email" placeholder="@email" required><br>
+
+    Password: <br> <input type="password" name="password" placeholder="password" required><br><br></label>
+
+    <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" required [(ngModel)]="contact.message" name="message" placeholder="Write your message..."></textarea>
+    </div>
+
+    <button type="submit" [disabled]="!contactForm.form.valid">Send Message</button>
+    <div *ngIf="submitted" class="success-message">
+        <p>Thank you for your message! I'll get back to you soon.</p>
+    </div>
+</div>
+</form>
