@@ -92,3 +92,16 @@ body {
         display: none;
     }
 }
+
+@media (max-width: 480px) {
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+}
